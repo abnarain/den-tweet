@@ -12,7 +12,17 @@
   },
   "externally_connectable": {
   "matches": ["*://*.twitter.com/*"]
-  }
+  },
+
+  "content_scripts":  [
+   {
+      "matches": ["https://www.twitter.com/*"],
+      //      "css": ["mystyles.css"],
+      "js": ["popup.js"]
+    }
+   ]
+  ,
+  
   "permissions": [
     "tabs",
     "activeTab",
